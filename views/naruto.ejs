@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto Quiz Game</title>
+    <link rel="stylesheet" href="/naruto.css">
+</head>
+
+<body id="app">
+    <h1>⛩️NARUTO QUIZ GAME⛩️</h1>
+    <div id="container">
+        <form action="/submit" method="post">
+            <h3 id="score">🍜: <%= locals.totalScore ? totalScore : "0" %></h3>
+
+            <h2 id="power"><%= question.power %></h2>
+
+            <% if(locals.error){ %>
+            <h2 id="error"><%= error %></h2>
+            <% } %>
+
+            <span id="ninja">🥷🏽</span><input type="text" name="answer" placeholder="Enter the ninja" autofocus autocomplete="off"><br>
+
+            <button type="submit">Submit <% if(locals.wasCorrect === true){ %>
+                <span id="correct">✔</span>
+                <% } else if(locals.wasCorrect === false){ %>
+                    <span id="wrong">✖</span>
+                <% } %>
+            </button>
+        </form>
+    </div>
+    
+    <script>
+        var wasCorrect = "<%= locals.wasCorrect %>";
+        if(wasCorrect === "false"){
+            alert("Gameover!. You earned <%= locals.totalScore %>🍜");
+            document.getElementById("app").innerHTML = `<div class="reCont"><a href="/" class="restart">Restart</a></div>`
+            document.getElementById("app").style.backgroundImage = `url("images/naruto.png")`;
+            document.getElementById("app").style.backgroundSize = `auto`;
+            document.getElementById("app").style.backgroundColor = `black`;
+        }
+    </script>
+</body>
+</html>

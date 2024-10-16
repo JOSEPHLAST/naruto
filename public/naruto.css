@@ -1,0 +1,98 @@
+body{
+    background-image: url(images/background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#container{
+    margin-top: 100px;
+}
+
+input{
+    width: 200px;
+    height: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    outline: none;
+    border: 2px dotted;
+}
+
+button{
+    width: 100%;
+    margin: 30px;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    max-width: 300px;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.reCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#ninja{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+#correct{
+    color: transparent;
+    animation: checkmark 1.5s ease;
+}
+
+#wrong{
+    color: transparent;
+    animation: cross 1.5s ease;
+}
+
+@keyframes checkmark {
+    50%{
+        color: green;
+    }
+}
+
+@keyframes cross {
+    50%{
+        color: red;
+    }
+}
+
+.restart{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 1.5rem;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
