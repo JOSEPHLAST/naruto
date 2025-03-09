@@ -1,4 +1,4 @@
-# 🎯 Naruto Quiz Game  
+# 🎯 NARUTO QUIZ GAME   
 
 ## **📌 OVERVIEW**  
 This is a **Naruto-themed quiz game** built using **EJS, JavaScript, and CSS**. Test your knowledge of the Naruto universe by answering fun and challenging questions about the anime and its characters!  
