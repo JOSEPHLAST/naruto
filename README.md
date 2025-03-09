@@ -6,7 +6,7 @@ This is a **Naruto-themed quiz game** built using **EJS, JavaScript, and CSS**. 
 ---
 
 ## **📸 SCREENSHOT**  
-*[!Naruto quiz game screenshot](naruto-quiz-game-screenshot)*  
+*[!Naruto quiz game screenshot](naruto-quiz-game-screenshot.png)*  
 
 ---
 
